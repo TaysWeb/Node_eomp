@@ -53,8 +53,7 @@ taste with a twist.</p>
       <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
   <img class="card-img-top33 img-fluid" src="https://i.postimg.cc/QM9xmJCb/3581393-200.png" alt="Card image cap">
   <div class="card-body33">
-    <p class="card-text">tHE BEST cheeseCake
-taste with a twist.</p>
+    <p class="card-text">Customer Satisfaction</p>
   </div>
 </div>
     </div>
@@ -62,8 +61,7 @@ taste with a twist.</p>
       <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
   <img class="card-img-top33 img-fluid" src="https://i.postimg.cc/rmZjTcMc/sign-of-good-food-symbol-is-isolated-on-a-white-background-icon-color-editable-free-vector.jpg" alt="Card image cap">
   <div class="card-body33">
-    <p class="card-text">tHE BEST cheeseCake
-taste with a twist.</p>
+    <p class="card-text">Quality Control</p>
   </div>
 </div>
     </div>
@@ -71,8 +69,7 @@ taste with a twist.</p>
       <div class="card d-flex justify-content-center align-items-center" style="width: 18rem;">
   <img class="card-img-top33 img-fluid" src="https://i.postimg.cc/nLrbGFRf/guaranteed-customer-satisfaction-best-service-label-thumbs-up-icon-vector.jpg" alt="Card image cap">
   <div class="card-body33">
-    <p class="card-text">tHE BEST cheeseCake
-taste with a twist.</p>
+    <p class="card-text">Security Check</p>
   </div>
 </div>
     </div>

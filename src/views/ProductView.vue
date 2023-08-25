@@ -10,7 +10,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{ product.product_name }} <br> R {{ product.product_price }}</h5>
                       <p class="card-text"><span>Category: {{ product.product_category }}</span></p>
-                      <button @click="singleProduct(product.product_id)">view more</button>
+                      <button class="btn btn-primary" @click="singleProduct(product.product_id)">view more</button>
                     </div>
                   </div>
             </div>

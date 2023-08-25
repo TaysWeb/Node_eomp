@@ -1,6 +1,6 @@
 <template>
     <div>
-<h1>Users Table</h1>
+<h1 class="text">Users Table</h1>
 <br>
 <table class="table">
     <thead>
@@ -26,7 +26,7 @@
       </tr>
     </tbody>
   </table>
-<h1>Products Table</h1>
+<h1 class="text">Products Table</h1>
 <AddProducts />
 <table class="table">
     <thead>
@@ -116,5 +116,8 @@ img{
     width: 4rem;
     border-radius: 5px;
     background-color: rgb(255, 129, 129);
+}
+.text{
+  color: white;
 }
 </style>

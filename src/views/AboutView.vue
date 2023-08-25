@@ -4,24 +4,24 @@
 </div>
 <div class="container-about">
 <section class="about">
-  <div id="carouselExampleCaptions w-50" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators w-50">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://i.postimg.cc/zDFsXvq0/20221210-172518.jpg" class="d-block" alt="...">
+      <img src="https://i.postimg.cc/zDFsXvq0/20221210-172518.jpg" class="d-block w-auto" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Laeeq Majal</h5>
+        <p>frontend</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://i.postimg.cc/Y99WGjJY/C12-Tara-Snell-2.jpg" class="d-block" alt="...">
+      <img src="https://i.postimg.cc/Y99WGjJY/C12-Tara-Snell-2.jpg" class="d-block w-auto" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Tara robin Snell</h5>
+        <p>Backend</p>
       </div>
     </div>
   </div>
@@ -36,7 +36,20 @@
 </div>
   <div class="about-content">
     <h2>About Us</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore enim ducimus id placeat, et mollitia aspernatur? Nesciunt ab ea dolor similique et fugiat ullam dolorem natus. Modi debitis culpa saepe obcaecati corporis cumque dolorem voluptatem quis repellat nostrum. Officiis nisi eligendi perferendis culpa repudiandae in? A, amet neque aliquid officia consequuntur facilis numquam delectus, quis earum, reiciendis quasi perspiciatis autem modi expedita consectetur. Exercitationem libero id maiores temporibus incidunt necessitatibus adipisci repellendus consequuntur vitae sequi debitis ratione numquam, laborum inventore placeat fugiat porro eligendi commodi voluptate dicta? Porro quam aperiam quae asperiores architecto minus, maiores aliquid repudiandae laboriosam nulla corrupti?</p>
+    <p>At BigEats, we believe that dining is a celebration of life, love, and laughter. Our mission is simple yet profound: to craft unforgettable moments through exceptional food, warm hospitality, and a vibrant ambiance. With a dedication to culinary creativity and an unwavering commitment to quality, we invite you to join us in savoring the artistry of flavors.
+<br>
+Cuisine:
+Our diverse menu reflects our passion for embracing a world of cuisines. From hearty classics that evoke nostalgia to innovative creations that push the boundaries of taste, BigEats offers a harmonious blend of global influences. Whether you're craving a perfectly seared steak, a delicate sushi roll, or a comforting bowl of pasta, our menu is a symphony of options that cater to every palate.
+<br>
+Ambiance:
+Step into a realm of contemporary elegance at BigEats. Our thoughtfully designed interiors blend modern aesthetics with cozy elements, creating an atmosphere that's equally suited for intimate gatherings and lively celebrations. The dimmed lighting, soothing colors, and welcoming décor set the stage for an exceptional dining experience, whatever the occasion.
+<br>
+Service:
+Our team at BigEats takes pride in providing service that's as remarkable as the cuisine we serve. From the moment you step through our doors, you'll be greeted with genuine warmth and professionalism. Our knowledgeable staff is always ready to guide you through the menu, recommend wine pairings, or tailor the experience to your preferences, ensuring that your visit is nothing short of extraordinary.
+<br>
+Community and Sustainability:
+Beyond the plates and glasses, BigEats is committed to making a positive impact on both the community and the environment. We partner with local farmers and suppliers to source the freshest, sustainable ingredients for our dishes. By doing so, we support local economies and contribute to the well-being of our environment, all while serving you the finest fare.
+</p>
     
   </div>
 </section>
@@ -138,9 +151,7 @@ h2,
 h3 {
 font-weight: 700 !important;
 }
-.d-block{
-width: 60%;
-}
+
 
 text{color: white;}
 </style>

@@ -1,11 +1,11 @@
 <template>
     <div>
         <div v-if="product">
-        <h1>{{ product.product_name }}</h1>
+        <h1 class="text">{{ product.product_name }}</h1>
         <div>
-            <img :src="product.product_image" :alt="product.product_name"> 
-            <p>Category: {{ product.product_category }}</p>
-            <p>Category: {{ product.product_price }}</p>
+            <img class="w-25" :src="product.product_image" :alt="product.product_name"> 
+            <p class="text">Category: {{ product.product_category }}</p>
+            <p class="text">Category: {{ product.product_price }}</p>
         </div>
         </div>
         <div v-else>
@@ -29,5 +29,7 @@ export default{
 </script>
 
 <style scoped>
-
+.text{
+    color: white;
+}
 </style>

@@ -3,7 +3,7 @@
       <!-- Button trigger modal -->
       <button
         type="button"
-        class="btn"
+        class="btn text-white"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
@@ -105,7 +105,7 @@
   
   <style scoped>
   .btn{
-    border: 1px solid black;
+    border: 1px solid white;
     margin-bottom: 7px;
   }
   

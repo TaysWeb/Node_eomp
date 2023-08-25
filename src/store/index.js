@@ -98,19 +98,19 @@ export default createStore({
   async updateProduct(context, payload) {
     console.log(payload)
     try {
-      const res = await axios.put(`${miniURL}product/${payload.product_id}`, payload);
+      const res = await axios.patch(`${miniURL}product/${payload.product_id}`, payload);
       const { msg, err } = await res.data;
       console.log(msg, err);
       if (err) {
-        console.log("eeeeerrrrorrrr: ", err);
+        console.log("An error has occured: ", err);
         context.commit("setMsg", err);
       }
       if (msg) {
         context.dispatch("fetchProducts")
         context.commit("setProduct", msg);
-        context.commit("setMsg", "Updated Product");
+        context.commit("setMsg", "Successfully updated product.");
       }
-    } catch(e) {
+    } catch (e) {
       context.commit("setMsg", e);
     }
   },
