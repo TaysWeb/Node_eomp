@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body>
+     
+      <div class="container">
+
+        <h1 class="text-md-center py-2"> Home Page Route Links </h1>
+        <table class="table table-hover table-bordered border-secondary table-responsive">
+            <thead >
+              <tr  class="table-danger" >
+                <th  class=" text-md-center ">Users</th>
+              </tr>
+              <tr class="table-dark">
+                <th>Method/s</th>
+                <th>Path</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">GET</th>
+                <td>/Users </td>
+                <td>Gets all the users from the Users Table</td>
+  
+              </tr>
+              <tr>
+                <th scope="row">POST</th>
+                <td>/Users/:id </td>
+                <td>Gets an individual User </td>
+             
+              </tr>
+
+              <tr>
+                <th scope="row">DELETE</th>
+                <td>/UserDelete/:id</td>
+                <td>Delete's a user using the userId </td>
+  
+              </tr>
+
+              <tr>
+                <th scope="row">PUT</th>
+                <td>/UserUpdate:id</td>
+                <td>Updates a user in the Users table using their userId</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table class="table table-hover table-bordered border-secondary table-responsive">
+            <thead >
+              <tr class="table-info">
+                <th class="text-md-center ">Products</th>
+              </tr>
+              <tr class="table-dark">
+                <th>Method/s</th>
+                <th>Path</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">GET</th>
+                <td>/Products</td>
+                <td>Gets all the Products from the products Table</td>
+  
+              </tr>
+              <tr>
+                <th scope="row">POST</th>
+                <td>/Products/:id </td>
+                <td>Gets an individual product </td>
+             
+              </tr>
+
+              <tr>
+                <th scope="row">DELETE</th>
+                <td>/ProdDelete/:id</td>
+                <td>Delete's a product using the prodId </td>
+  
+              </tr>
+
+              <tr>
+                <th scope="row">PUT</th>
+                <td>/ProdUpdate:id</td>
+                <td>Updates a product in the Products table using their prodId</td>
+              </tr>
+
+            </tbody>
+          </table> 
+      </div>
+</body>
+</html>

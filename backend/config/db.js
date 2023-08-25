@@ -1,5 +1,5 @@
 const {createPool} = require('mysql');
-const process =  require("dotenv/config");
+require('dotenv').config();
 
 const db = createPool({
   host: process.env.DB_HOST,
@@ -9,7 +9,7 @@ const db = createPool({
   connectionLimit : 60 
 }); 
  
-db.connect(function(err) {
+db.connect((err) => {
   if (err) throw err;
   console.log('Database is connected successfully !');
 });
