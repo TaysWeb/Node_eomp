@@ -1,11 +1,23 @@
 // import  createError from ('http-errors');
 const express = require('express');
 const path = require('path');
+const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const indexRouter = require('./routes/prods.js');
+const userRoute = require('./users/user_route.js');
  
-const app = express();
+// cookie-parsing 
+const cookieParser = require('cookie-parser') ; 
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Credentials", "true");
+    res.header("Access-Control-Allow-Methods", "*");
+    res.header("Access-Control-Request-Methods", "*");
+    res.header("Access-Control-Allow-Headers", "*");
+    res.header("Access-Control-Expose-Headers", "Authorization");
+    next();
+})
+
  
 app.use(express.json());
  
@@ -15,16 +27,30 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
  
-app.use(cors());
+// app.use(cors());
 
-// this next line will show my html page
-app.use('/',express.static(path.join(__dirname , '/static')));
+// // this next line will show my html page
+// app.use('/',express.static(path.join(__dirname , '/static')));
 
-app.get( '/', (req, res) => {
-      res.sendFile('./static/index.html');
+// app.get( '/', (req, res) => {
+//       res.sendFile('./static/index.html');
+// })
+
+app.use(
+  express.static('./static'),
+  express.urlencoded({
+      extended: false
+  }),
+  cookieParser(),
+  cors()
+)
+app.get('^/$|/challenger',
+  (req, res)=> {
+  res.sendFile(path.resolve(__dirname,
+      './static/html/index.html'))
 })
  
-app.use('/', indexRouter);
+app.use("/users", userRoute);
  
 // Handling Errors
 app.use((err, req, res, next) => {

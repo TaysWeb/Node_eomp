@@ -1,4 +1,4 @@
-const db = require('../backend/config/db.js');
+const db = require('../config/db.js');
 
 module.exports = {
   create: (data, callBack) => {
@@ -57,17 +57,20 @@ module.exports = {
   },
   updateUser: (data, callBack) => {
     db.query(
-      `update Users set firstName=?, lastName=?, gender=?, email=?, password=?, number=? where id = ?`,
+      `update Users set  userID=?,firstname=?, lastName=?, userAge=?, Gender=?, userRole=?, emailAdd=?, userPass=?, userProfile=? where userID = ?`,
       [
-        data.first_name,
-        data.last_name,
-        data.gender,
-        data.email,
-        data.password,
-        data.number,
-        data.id
+    
+        data.firstname,
+        data.lastname,
+        data.userAge,
+        data.Gender,
+        data.userRole ,
+        data.emailAdd,
+        data.userPass,
+        data.userProfile,
+        data.userID ,
       ],
-      (error, results, fields) => {
+      (error, results) => {
         if (error) {
           callBack(error);
         }
